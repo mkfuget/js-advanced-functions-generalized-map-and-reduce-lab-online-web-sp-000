@@ -16,5 +16,12 @@ function reduce(array, func, startingPoint=0)
   {
     out = func(array[i], out)
   }
-  return out+startingPoint
+  if(startingPoint!= 0)
+  {
+    return out+startingPoint
+  }
+  else
+  {
+    return out
+  }
 }
