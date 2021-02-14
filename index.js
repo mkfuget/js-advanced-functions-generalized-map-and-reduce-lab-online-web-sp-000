@@ -18,8 +18,9 @@ function reduce(array, func, startingPoint=0)
     for(let i=0; i<array.length; i++)
     {
       if(func(array[i]))
+      {
         out = true
-      end
+      }
     }
     return out;
 
