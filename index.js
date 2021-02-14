@@ -12,7 +12,7 @@ function map(array, func)
 function reduce(array, func, startingPoint=0)
 {
   let out = 0;
-  if (func != undefined) 
+  if (func != undefined)
   {
     out = false
     for(let i=0; i<array.length; i++)
@@ -23,8 +23,8 @@ function reduce(array, func, startingPoint=0)
     }
     return out;
 
-  } 
-  else 
+  }
+  else
   {
     for(let i=0; i<array.length; i++)
     {
