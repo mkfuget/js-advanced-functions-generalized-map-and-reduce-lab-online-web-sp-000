@@ -11,10 +11,10 @@ function map(array, func)
 
 function map(array, func)
 {
-  out = [];
+  out = 0;
   for(let i=0; i<array.length; i++)
   {
-    out.push(func(array[i]))
+    out+=func(array[i]))
   }
   return out;
 }
