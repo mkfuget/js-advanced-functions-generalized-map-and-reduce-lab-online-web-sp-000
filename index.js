@@ -1,7 +1,7 @@
 // Add your functions here
 function map(array, func)
 {
-  out = [];
+  let out = [];
   for(let i=0; i<array.length; i++)
   {
     out.push(func(array[i]))
@@ -11,7 +11,7 @@ function map(array, func)
 
 function reduce(array, func)
 {
-  out = 0;
+  let out = 0;
   for(let i=0; i<array.length; i++)
   {
     out+=func(array[i])
