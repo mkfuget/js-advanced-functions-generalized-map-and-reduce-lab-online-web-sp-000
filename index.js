@@ -11,8 +11,8 @@ function map(array, func)
 
 function reduce(array, func, startingPoint=0)
 {
-  let out = 0;
-  for(let i=0; i<array.length; i++)
+  let out = array[0];
+  for(let i=1; i<array.length; i++)
   {
     out = func(array[i], out)
   }
