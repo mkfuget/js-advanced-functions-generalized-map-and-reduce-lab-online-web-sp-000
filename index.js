@@ -12,9 +12,24 @@ function map(array, func)
 function reduce(array, func, startingPoint=0)
 {
   let out = 0;
-  for(let i=0; i<array.length; i++)
+  if (func != undefined) 
   {
-    out += array[i]
+    out = false
+    for(let i=0; i<array.length; i++)
+    {
+      if(func(array[i]))
+        out = true
+      end
+    }
+    return out;
+
+  } 
+  else 
+  {
+    for(let i=0; i<array.length; i++)
+    {
+      out += array[i]
+    }
+    return out+ startingPoint;
   }
-  return out+ startingPoint;
 }
