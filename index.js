@@ -9,7 +9,7 @@ function map(array, func)
   return out;
 }
 
-function reduce(array, startingPoint=0)
+function reduce(array, func, startingPoint=0)
 {
   let out = 0;
   for(let i=0; i<array.length; i++)
