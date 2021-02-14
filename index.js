@@ -16,5 +16,5 @@ function reduce(array, func, startingPoint=0)
   {
     out = func(array[i], out)
   }
-  return out
+  return out+startingPoint
 }
