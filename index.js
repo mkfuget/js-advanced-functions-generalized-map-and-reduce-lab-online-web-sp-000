@@ -9,12 +9,12 @@ function map(array, func)
   return out;
 }
 
-function reduce(array, func)
+function reduce(array, func, startingPoint)
 {
   let out = 0;
   for(let i=0; i<array.length; i++)
   {
     out+=func(array[i])
   }
-  return out;
+  return out + startingPoint;
 }
